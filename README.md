@@ -9,4 +9,5 @@ A Python Console App that surfs throughout Wikipedia for the given topic and giv
 - Learn and have fun Surfing WikiPedia!
 
 Developed by,
+
 Ashwin Narayanan S

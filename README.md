@@ -8,6 +8,11 @@ A Python Console App that surfs throughout Wikipedia for the given topic and giv
 - Open results in Browser or Console
 - Learn and have fun Surfing WikiPedia!
 
-Developed by,
+## Release v1.1
 
+- Minor Bug Fixes
+- Fixed the random suggest topic errors!
+- Added icon to app.
+
+Developed by,<br>
 Ashwin Narayanan S

@@ -64,8 +64,12 @@ while (flag == 1):
                 flag = int(
                     input("\n\nIn a mood to read more?\n[Yes -> 1, No -> 0]: "))
             elif(browser_choice == 2):
+                url = requests.get(f"https://en.wikipedia.org/wiki/{key}")
+                soup = BeautifulSoup(url.content, "html.parser")
+                content = soup.find(class_="mw-body-content mw-content-ltr").text
+                title = soup.find(class_="firstHeading").text
                 print(
-                    f"\n\nTITLE: {wikipedia.page(key).title}\n\n{wikipedia.page(key).content}")
+                    f"\n\nTITLE: {title}\n\n{content}")
                 flag = int(
                     input("\n\nIn a mood to read more?\n[Yes -> 1, No -> 0]: "))
         else:
@@ -87,8 +91,13 @@ while (flag == 1):
                 if (topic_state != 1 and topic_state != 0):
                     print("\nInvalid Choice! Press either 0 or 1!!\n")
                     topic_flag == False
-                else:
+                elif(topic_state == 1):
+                    satisfaction = True
                     topic_flag = True
+                elif(topic_state == 0):
+                    url = requests.get("https://en.wikipedia.org/wiki/Special:Random")
+                    soup = BeautifulSoup(url.content, "html.parser")
+                    title = soup.find(class_="firstHeading").text
                     
             b_flag = False
             while (b_flag == False):
@@ -105,8 +114,11 @@ while (flag == 1):
                 flag = int(
                     input("\n\nIn a mood to read more?\n[Yes -> 1, No -> 0]: "))
             elif(browser_choice == 2):
+                url = requests.get(f"https://en.wikipedia.org/wiki/{title}")
+                soup = BeautifulSoup(url.content, "html.parser")
+                content = soup.find(class_="mw-body-content mw-content-ltr").text
                 print(
-                    f"\n\nTITLE: {wikipedia.page(title).title}\n\n{wikipedia.page(title).content}")
+                    f"\n\nTITLE: {title}\n\n{content}")
                 flag = int(
                     input("\n\nIn a mood to read more?\n[Yes -> 1, No -> 0]: "))
 

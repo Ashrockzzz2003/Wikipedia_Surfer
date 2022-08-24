@@ -2,6 +2,7 @@ import wikipedia
 import requests
 from bs4 import BeautifulSoup
 import webbrowser
+import time
 
 
 def print_list(l):
@@ -124,3 +125,4 @@ while (flag == 1):
 
 
 print("\n\nThank you for using my Wikipedia Explorer!\nDeveloped by\nASHWIN NARAYANAN S")
+time.sleep(5)

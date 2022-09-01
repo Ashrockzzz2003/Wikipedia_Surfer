@@ -14,5 +14,7 @@ A Python Console App that surfs throughout Wikipedia for the given topic and giv
 - Fixed the random suggest topic errors!
 - Added icon to app.
 
+<a href="https://github.com/Ashrockzzz2003/Wikipedia_Surfer/releases/download/v1.1/wikipedia_surfer_v1.1.exe">`Download App`</a>
+
 Developed by,<br>
 Ashwin Narayanan S
